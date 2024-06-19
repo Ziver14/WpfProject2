@@ -1,0 +1,58 @@
+﻿<Window x:Class="WpfProject2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfProject2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48*"/>
+            <RowDefinition Height="151*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="96*"/>
+            <RowDefinition Height="96*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column = "1" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Height="32" Width="144">
+             <Run Foreground="#FFEA0D0D"> Регистрация </Run>
+             <Run> Сотрудников </Run>
+            <LineBreak/>
+             <Run>Компании</Run>
+        </TextBlock>
+        <StackPanel Grid.ColumnSpan="2" Margin="0,48,266,0" Grid.RowSpan="2">
+            <TextBlock>Отзывы на техподдержку</TextBlock>
+            <ListBox  >
+                <ListBoxItem>
+                    <TextBlock>
+                        <Run>Демин Игорь Олегович</Run>
+                        <LineBreak/>
+                        <Run>Не дозвониться</Run>
+                    </TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock>
+         <Run>Кренделев Александр Анатольевич</Run>
+         <LineBreak/>
+         <Run>Дозвонились</Run>
+                    </TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock>
+            <Run>Пупкин Иван Иванович</Run>
+                <LineBreak/>
+            <Run>Спит</Run>
+                    </TextBlock>
+                </ListBoxItem>
+            </ListBox>
+
+
+
+        </StackPanel>
+    </Grid>
+</Window>
